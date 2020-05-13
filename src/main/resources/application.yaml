@@ -1,0 +1,18 @@
+rapidapi:
+  name:
+    endpoint: https://restcountries-v1.p.rapidapi.com/name
+  alpha:
+    endpoint: https://restcountries-v1.p.rapidapi.com/alpha/
+  key: c97952862fmshe72152dc748a296p1e92b3jsn1351a36f4b6a
+exchange:
+  api:
+    validate: https://api.exchangeratesapi.io/latest
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 883485912187-sh91rd90nlbvvgn7bipkec21m62865cq.apps.googleusercontent.com
+            client-secret: y9SKFEaW4jk-rCTPNlPW6q40

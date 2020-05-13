@@ -1,0 +1,110 @@
+[
+  {
+    "name": "South Sudan",
+    "topLevelDomain": [
+      ".ss"
+    ],
+    "alpha2Code": "SS",
+    "alpha3Code": "SSD",
+    "callingCodes": [
+      "211"
+    ],
+    "capital": "Juba",
+    "altSpellings": [
+      "SS"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 11892934,
+    "latlng": [
+      7.0,
+      30.0
+    ],
+    "demonym": "South Sudanese",
+    "area": 619745.0,
+    "gini": 45.5,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "CAF",
+      "COD",
+      "ETH",
+      "KEN",
+      "SDN",
+      "UGA"
+    ],
+    "nativeName": "South Sudan",
+    "numericCode": "728",
+    "currencies": [
+      "SSP"
+    ],
+    "languages": [
+      "en"
+    ],
+    "translations": {
+      "de": "Südsudan",
+      "es": "Sudán del Sur",
+      "fr": "Soudan du Sud",
+      "ja": "南スーダン",
+      "it": "Sudan del sud"
+    },
+    "relevance": "0"
+  },
+  {
+    "name": "Sudan",
+    "topLevelDomain": [
+      ".sd"
+    ],
+    "alpha2Code": "SD",
+    "alpha3Code": "SDN",
+    "callingCodes": [
+      "249"
+    ],
+    "capital": "Khartoum",
+    "altSpellings": [
+      "SD",
+      "Republic of the Sudan",
+      "Jumhūrīyat as-Sūdān"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 38435252,
+    "latlng": [
+      15.0,
+      30.0
+    ],
+    "demonym": "Sudanese",
+    "area": 1886068.0,
+    "gini": 35.3,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "borders": [
+      "CAF",
+      "TCD",
+      "EGY",
+      "ERI",
+      "ETH",
+      "LBY",
+      "SSD"
+    ],
+    "nativeName": "السودان",
+    "numericCode": "729",
+    "currencies": [
+      "SDG"
+    ],
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "translations": {
+      "de": "Sudan",
+      "es": "Sudán",
+      "fr": "Soudan",
+      "ja": "スーダン",
+      "it": "Sudan"
+    },
+    "relevance": "0"
+  }
+]

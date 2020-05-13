@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Japan",
+    "topLevelDomain": [
+      ".jp"
+    ],
+    "alpha2Code": "JP",
+    "alpha3Code": "JPN",
+    "callingCodes": [
+      "81"
+    ],
+    "capital": "Tokyo",
+    "altSpellings": [
+      "JP",
+      "Nippon",
+      "Nihon"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 126865000,
+    "latlng": [
+      36.0,
+      138.0
+    ],
+    "demonym": "Japanese",
+    "area": 377930.0,
+    "gini": 38.1,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "borders": [],
+    "nativeName": "日本",
+    "numericCode": "392",
+    "currencies": [
+      "JPY"
+    ],
+    "languages": [
+      "ja"
+    ],
+    "translations": {
+      "de": "Japan",
+      "es": "Japón",
+      "fr": "Japon",
+      "ja": "日本",
+      "it": "Giappone"
+    },
+    "relevance": "2.5"
+  }
+]
