@@ -23,9 +23,11 @@ public class TripRequestValidator {
         log.info("Validating trip request {}", request);
         checkNumericValues(request);
         if (!currencyService.isValid(request.getCurrency()) ||
-            !countriesService.isValidCountry(request.getStartingCountry()) ||
-            !isEnoughBudget(request)) {
+            !countriesService.isValidCountry(request.getStartingCountry())) {
             throw new IllegalArgumentException("Invalid parameter(s). Please verify!");
+        }
+        if (!isEnoughBudget(request)) {
+            throw new IllegalArgumentException("Not enough budget !");
         }
         log.info("Request {} is valid !", request);
     }

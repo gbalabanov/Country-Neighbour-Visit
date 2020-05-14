@@ -5,6 +5,9 @@ import java.util.Map;
 
 import com.country.neighbours.visit.model.CountryInfo;
 
+/**
+ * Service for interacting with currencies API
+ */
 public interface CurrencyService {
 
     /**
@@ -21,6 +24,6 @@ public interface CurrencyService {
      * @param amount the amount money per country
      * @return Map with key country code and value - amount for that country
      */
-    Map<String, String> calculateAmountForAllNeighbours(String from, List<CountryInfo> neighboursList,
-                                                        int amount);
+    Map<String, String> calculateAmountPerNeighbour(String from, List<CountryInfo> neighboursList,
+                                                    int amount);
 }

@@ -6,6 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 //@Configuration
 //@EnableSwagger2
+//TODO fix swagger doc, maybe there're issues with UI dependencies
 public class SwaggerConfig {
 
     /**

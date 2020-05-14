@@ -43,8 +43,8 @@ public class TripRequestServiceImpl implements TripRequestService {
             leftover =
                     request.getTotalBudget() - ((neighboursCodes.size() * request.getBudgetPerCountry()) * visitRounds);
 
-            outputPerNeighbour = currencyService.calculateAmountForAllNeighbours(request.getCurrency(), neighboursInfo,
-                                                                    request.getBudgetPerCountry());
+            outputPerNeighbour = currencyService.calculateAmountPerNeighbour(request.getCurrency(), neighboursInfo,
+                                                                             request.getBudgetPerCountry());
         } else {
             visitRounds = 0;
             leftover = request.getTotalBudget();

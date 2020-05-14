@@ -4,6 +4,9 @@ import java.util.List;
 
 import com.country.neighbours.visit.model.CountryInfo;
 
+/**
+ * Service for interacting with country info API
+ */
 public interface CountriesService {
 
     /**

@@ -41,7 +41,7 @@ public class CurrencyServiceImpl implements CurrencyService {
         try {
             restTemplate.getForEntity(endpoint, Void.class);
         } catch (HttpClientErrorException e) {
-            log.warn("Invalid currency {}", currency);
+            log.warn("Currency {} not found.", currency);
             result = false;
         }
         return result;
@@ -56,8 +56,8 @@ public class CurrencyServiceImpl implements CurrencyService {
     }
 
     @Override
-    public Map<String, String> calculateAmountForAllNeighbours(String from, List<CountryInfo> neighboursList,
-                                                               int amount) {
+    public Map<String, String> calculateAmountPerNeighbour(String from, List<CountryInfo> neighboursList,
+                                                           int amount) {
         return neighboursList.stream().parallel().collect(Collectors.toMap(CountryInfo::getName, c -> {
             String to = from;
             double converted = amount;
