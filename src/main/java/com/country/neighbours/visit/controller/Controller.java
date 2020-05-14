@@ -33,8 +33,7 @@ public class Controller {
 
     @RequestMapping(value = "/request", method= RequestMethod.GET)
     public ResponseEntity<TripResult> request(@RequestParam String startingCountry, @RequestParam String currency,
-                                              @RequestParam String budgetPerCountry, @RequestParam String totalBudget
-            , @AuthenticationPrincipal OAuth2User principal) {
+                                              @RequestParam String budgetPerCountry, @RequestParam String totalBudget) {
         TripRequestDTO requestDTO = TripRequestDTO.builder()
                 .startingCountry(startingCountry)
                 .currency(currency)
@@ -53,6 +52,7 @@ public class Controller {
 
     @GetMapping("/user")
     public Map<String, Object> user(@AuthenticationPrincipal OAuth2User principal) {
+        log.info("Principal: {}", principal);
         return Collections.singletonMap("name", principal.getAttribute("name"));
     }
 }

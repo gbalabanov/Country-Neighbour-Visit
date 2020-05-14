@@ -38,21 +38,6 @@ public class CountryServiceTest {
     private WireMockServer wireMockServer;
 
     @Test
-    public void testGetNeighbours() {
-        String response = TestServiceUtils.loadResource("/example_country.json");
-        this.wireMockServer.stubFor(WireMock.get("/BGN")
-                                            .willReturn(aResponse()
-                                                                .withBody(response)
-                                                                .withHeader(
-                                                                        "Content-Type",
-                                                                        MediaType.APPLICATION_JSON_VALUE)));
-
-        List<String> neighbours = countriesService.getNeighbours("BGN");
-        assertEquals(5, neighbours.size());
-        assertThat(neighbours, containsInAnyOrder("GRC", "MKD", "ROU", "SRB", "TUR"));
-    }
-
-    @Test
     public void testGetCountryInfo() {
         String response = TestServiceUtils.loadResource("/example_country.json");
         this.wireMockServer.stubFor(WireMock.get("/alpha?codes=BGN")

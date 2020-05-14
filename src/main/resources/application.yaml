@@ -14,5 +14,9 @@ spring:
       client:
         registration:
           google:
-            client-id: 883485912187-sh91rd90nlbvvgn7bipkec21m62865cq.apps.googleusercontent.com
-            client-secret: y9SKFEaW4jk-rCTPNlPW6q40
+            clientId: 883485912187-jmi3cjg59p4batg1f4j7583n0m4j0j28.apps.googleusercontent.com
+            clientSecret: wxledSq6wDzzhtHehK-Btwue
+
+logging:
+  level:
+    org.springframework.security: DEBUG
